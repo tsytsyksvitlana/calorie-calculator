@@ -20,4 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('food/', include('food_consuming.urls')),
+    path('api/food_consuming', include('food_consuming.api.urls')),
 ]
